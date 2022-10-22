@@ -3,20 +3,20 @@
 /**
  * more_numbers - Print num from 0 to 14, 10 times
  *
- * Return: no return
+ * Return: void
  */
 
 void more_numbers(void)
 {
-	int c, d;
+	int l, c;
 
-	for (c = 1; c < 10; c++)
+	for (l = 0; l < 10; l++)
 	{
-		for (d = 0; d <= 14; d++)
+		for (c = 0; c <= 14; c++)
 		{
-			if (d > 9)
-				_putchar((d / 10) + '0');
-				_putchar((d % 10 + '0');
+			if (c > 9)
+				_putchar((c / 10) + '0');
+			_putchar((c % 10) + '0');
 		}
 		_putchar('\n');
 	}
